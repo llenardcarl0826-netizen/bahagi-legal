@@ -1,47 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bahagi - Delete your data</title>
-<style>
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 18px 60px; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.7rem; margin-bottom: 4px; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .muted { color: #666; font-size: 0.9rem; }
-  li { margin-bottom: 6px; }
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bahagi - Delete your account</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>How to delete your Bahagi data</h1>
-<p class="muted">Last updated: September 20, 2026</p>
+<main>
+<nav><a href="index.html">Bahagi</a><a href="privacy.html">Privacy Policy</a><a href="data-deletion.html">Delete your account</a></nav>
+<div class="card">
+<h1>Delete your Bahagi account</h1>
+<p class="meta">Bahagi (Android app: ph.bahagi.app) &middot; Last updated: October 13, 2026</p>
 
-<h2>Option 1: delete your account in the app</h2>
+<h2>Option 1: Delete it yourself in the app (fastest)</h2>
 <ol>
-  <li>Open Bahagi and go to <strong>Profile</strong>, then <strong>Security &amp; privacy</strong>.</li>
-  <li>Settle up any outstanding balances in your groups. The app will not delete an account that still owes or is owed money.</li>
-  <li>Tap <strong>Delete account</strong> and confirm. If you signed in with Google or Facebook, you will be asked to sign in with it once more to confirm it is you.</li>
+<li>Open Bahagi and sign in.</li>
+<li>Go to <strong>Profile &rarr; Security &rarr; Delete Account</strong>.</li>
+<li>Confirm with your password, or by signing in again with Google or Facebook.</li>
 </ol>
+<div class="note"><p>Before you can delete, every group must be settled up (your balance must be zero), and any payment must be confirmed by the other person. The app tells you which group still needs settling.</p></div>
+
+<h2>Option 2: Ask us to delete it</h2>
+<p>If you cannot open the app or no longer have it installed, email us from the address you signed up with:</p>
+<p><a class="btn" href="mailto:supportbahagi@gmail.com?subject=Delete%20my%20Bahagi%20account&amp;body=Please%20delete%20my%20Bahagi%20account.%0D%0A%0D%0AName%20on%20the%20account%3A%20%0D%0AEmail%20on%20the%20account%3A%20">Email a deletion request</a></p>
+<p>Include your name and the email address on the account. We may ask one question to confirm it is really you. We will process the request within 30 days. Balances in your groups still have to be settled with the other members, because we cannot erase money someone else is owed.</p>
+
+<h2>Signed in with Facebook or Google?</h2>
+<p>Deleting your Bahagi account removes the data described below. It does not delete your Facebook or Google account. You can also remove Bahagi from your Facebook <em>Settings &rarr; Apps and Websites</em> or from your Google account&rsquo;s <em>Third-party connections</em> page.</p>
 
 <h2>What is deleted</h2>
 <ul>
-  <li>Your profile: name, email, profile photo link, username, payment details and notification tokens.</li>
-  <li>Your membership in every group, and any pending invitations to or from you.</li>
-  <li>Your sign-in (the account itself).</li>
+<li>Your profile: name, email, profile photo link, payment method labels, reminder settings and push-notification tokens.</li>
+<li>Your @username, which becomes available to others.</li>
+<li>Your sign-in account (Firebase Authentication).</li>
+<li>Invites sent to or from you, and the entry that let people find you by email.</li>
+<li>Your membership in every group. A group where you are the only member is deleted completely. If you were the group admin, admin passes to another member.</li>
 </ul>
 
-<h2>What can remain</h2>
+<h2>What stays, and why</h2>
 <ul>
-  <li>Expenses, payment records and chat messages you added to a group that still has other members stay in that group's history, because they are part of a shared record.</li>
-  <li>Images and voice notes you shared are stored with our storage provider and may remain until we remove them. You can ask us to remove them (see below).</li>
+<li><strong>Shared expense and chat history</strong> in groups that still have other members. It belongs to the group as a whole, so those members keep their records. Your name may still appear on entries you made there.</li>
+<li><strong>Images and voice messages</strong> you uploaded to a group may remain on our image host (Cloudinary) while that group exists. Email us if you want specific files removed.</li>
 </ul>
+<p>To have your name removed from the shared records as well, email <a href="mailto:supportbahagi@gmail.com">supportbahagi@gmail.com</a> and tell us which groups.</p>
 
-<h2>Option 2: ask us to delete it</h2>
-<p>If you cannot use the app, email [supportbahagi@gmail.com] from the address on your account, or tell us which name and email you signed up with. We will act on your request within [3] days.</p>
-
-<h2>If you signed in with Facebook</h2>
-<p>Removing Bahagi from your Facebook settings (Settings, then Apps and Websites) stops Facebook sharing new information with the app, but it does not delete your Bahagi account. To delete your Bahagi data, use one of the two options above.</p>
-
-<p><a href="privacy.html">Back to the privacy policy</a></p>
+<p>See also our <a href="privacy.html">Privacy Policy</a>.</p>
+</div>
+<footer><p>&copy; 2026 Bahagi</p></footer>
+</main>
 </body>
 </html>
